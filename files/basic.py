@@ -2,13 +2,13 @@
 import sys
 
 # PySide2 imports
-from PySide2.QtWidgets import QApplication, QWidget, QPushButton
+from PySide2.QtWidgets import QApplication, QWidget, QPushButton, QMainWindow
 
 # One instance per app
 app = QApplication(sys.argv)
 
 # Our window
-window = QWidget()
+window = QMainWindow()
 
 # Let's show our window
 window.show()
