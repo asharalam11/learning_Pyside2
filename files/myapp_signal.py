@@ -18,14 +18,20 @@ class MainWindow(QMainWindow):
 
         self.button = QPushButton("Press me!")
         self.button.setCheckable(True)
-        self.button.released.connect(self.the_button_was_released)
+        #self.button.released.connect(self.the_button_was_released)
         self.button.clicked.connect(self.the_button_was_clicked)
-        self.button.clicked.connect(self.the_button_was_toggled)
+        #self.button.clicked.connect(self.the_button_was_toggled)
 
         self.setCentralWidget(self.button)
 
     def the_button_was_clicked(self):
         print("Clicked")
+        self.button.setText("You already clicked me")
+        # Disable the button
+        self.button.setEnabled(False)
+        # Change window title
+        self.setWindowTitle("App mod")
+
 
     def the_button_was_toggled(self, checked):
         self.button_is_checked = checked
