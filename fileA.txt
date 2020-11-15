@@ -1,5 +1,5 @@
 feature 1
 feature mistake
 feature bigger mistake
-feature 3
-feature 4
+feature 2
+feature3
