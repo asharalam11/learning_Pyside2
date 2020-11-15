@@ -3,3 +3,4 @@ feature mistake
 feature bigger mistake
  merge commit 
 feature 2
+feature 3
